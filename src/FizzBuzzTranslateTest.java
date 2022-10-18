@@ -33,4 +33,5 @@ class FizzBuzzTranslateTest {
         String result = FizzBuzzTranslate.fizzBuzzTranslate(integer);
         assertEquals(excepted, result);
     }
+
 }
