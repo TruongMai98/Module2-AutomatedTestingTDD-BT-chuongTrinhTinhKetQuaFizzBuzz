@@ -24,4 +24,13 @@ class FizzBuzzTranslateTest {
         String result = FizzBuzzTranslate.fizzBuzzTranslate(integer);
         assertEquals(excepted, result);
     }
+    @Test
+    @DisplayName("hien thi Buzz")
+    void fizzBuzzTranslate2() {
+        int integer = 5;
+
+        String excepted = "Buzz";
+        String result = FizzBuzzTranslate.fizzBuzzTranslate(integer);
+        assertEquals(excepted, result);
+    }
 }
