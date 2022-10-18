@@ -91,4 +91,14 @@ class FizzBuzzTranslateTest {
         String result = FizzBuzzTranslate.toWord(integer);
         assertEquals(expected, result);
     }
+
+    @Test
+    @DisplayName("doc so 99")
+    void fizzBuzzTranslate9() {
+        int integer = 99;
+
+        String expected = "Ninety Nine";
+        String result = FizzBuzzTranslate.toWord(integer);
+        assertEquals(expected, result);
+    }
 }
