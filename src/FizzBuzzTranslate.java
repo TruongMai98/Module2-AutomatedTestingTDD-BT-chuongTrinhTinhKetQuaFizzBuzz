@@ -6,6 +6,8 @@ public class FizzBuzzTranslate {
         } else {
             if (divisibleBy3) {
                 return "Fizz";
+            } else if (integer % 5 ==0) {
+                return "Buzz";
             }
         }
         return null;
