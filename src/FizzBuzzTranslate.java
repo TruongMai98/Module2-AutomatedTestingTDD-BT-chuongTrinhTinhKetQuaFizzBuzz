@@ -9,7 +9,7 @@ public class FizzBuzzTranslate {
         } else {
             if (divisibleBy3 && divisibleBy5) {
                 return "FizzBuzz";
-            } else if (divisibleBy3 || num3(integer) == 1) {
+            } else if (divisibleBy3 || hasNumber3(integer) == 1) {
                 return "Fizz";
             } else if (divisibleBy5) {
                     return "Buzz";
@@ -18,7 +18,7 @@ public class FizzBuzzTranslate {
             }
         }
     }
-    public static int num3(int integer) {
+    public static int hasNumber3(int integer) {
         String str = String.valueOf(integer);
         return str.indexOf("3");
     }
