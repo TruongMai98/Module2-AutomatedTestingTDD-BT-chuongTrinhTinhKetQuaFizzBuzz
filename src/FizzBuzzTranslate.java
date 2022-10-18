@@ -7,7 +7,7 @@ public class FizzBuzzTranslate {
         } else {
             if (divisibleBy3 && divisibleBy5) {
                 return "FizzBuzz";
-            } else if (divisibleBy3) {
+            } else if (divisibleBy3 ) {
                 return "Fizz";
             } else if (divisibleBy5) {
                     return "Buzz";
