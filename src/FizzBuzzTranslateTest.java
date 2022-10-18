@@ -49,7 +49,7 @@ class FizzBuzzTranslateTest {
     void fizzBuzzTranslate4() {
         int integer = 2;
 
-        String excepted = "16";
+        String excepted = "2";
         String result = FizzBuzzTranslate.fizzBuzzTranslate(integer);
         assertEquals(excepted, result);
     }
