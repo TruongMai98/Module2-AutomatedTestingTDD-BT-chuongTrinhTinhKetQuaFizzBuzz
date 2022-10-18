@@ -24,6 +24,21 @@ public class FizzBuzzTranslate {
             }
         }
     }
+    public static String toWord(int integer) {
+        int last = integer % 10; // lấy số cuối
+        int second = (integer / 10) % 10; // lấy số thứ 2
+        int secondAndLast = integer % 100; // lấy 2 số cuối
+        int first = integer / 100; // lấy số đầu tiên
+        String[] arrA = {" ", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+                "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        String[] arrB = {" ", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+        if (integer < 20) {
+            return arrA[integer];
+        } else if (integer < 100) {
+            return arrB[second] + " " + arrA[last];
+        }
+        return null;
+    }
     public static int hasNumber3(int integer) {
         String str = String.valueOf(integer);
         return str.indexOf("3");
