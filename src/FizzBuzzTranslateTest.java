@@ -34,4 +34,14 @@ class FizzBuzzTranslateTest {
         assertEquals(excepted, result);
     }
 
+    @Test
+    @DisplayName("hien thi FizzBuzz")
+    void fizzBuzzTranslate3() {
+        int integer = 15;
+
+        String excepted = "FizzBuzz";
+        String result = FizzBuzzTranslate.fizzBuzzTranslate(integer);
+        assertEquals(excepted, result);
+    }
+
 }
