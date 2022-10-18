@@ -5,7 +5,9 @@ public class FizzBuzzTranslate {
         if (integer < 0) {
             return "nhap so nguyen > 0";
         } else {
-            if (divisibleBy3) {
+            if (divisibleBy3 && divisibleBy5) {
+                return "FizzBuzz";
+            } else if (divisibleBy3) {
                 return "Fizz";
             } else {
                 if (divisibleBy5) {
