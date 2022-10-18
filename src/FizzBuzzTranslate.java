@@ -9,12 +9,18 @@ public class FizzBuzzTranslate {
         } else {
             if (divisibleBy3 && divisibleBy5) {
                 return "FizzBuzz";
-            } else if (divisibleBy3 || hasNumber3(integer) == 1) {
+            } else if (divisibleBy3) {
                 return "Fizz";
-            } else if (divisibleBy5 || hasNumber5(integer) == 1 ) {
+            } else if (divisibleBy5) {
                     return "Buzz";
                 } else {
-                return String.valueOf(integer);
+                if (hasNumber3(integer) >= 0) {
+                    return "Fizz";
+                } else if (hasNumber5(integer) >= 0) {
+                    return "Buzz";
+                } else {
+                    return String.valueOf(integer);
+                }
             }
         }
     }
